@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- hi -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BunBun Home</title>
+    <link rel="stylesheet" type="text/css" href="style_v2.css">
+  </head>
+
+  <body onload="displayCartNumber();">
+    <!-- Navigation bar -->
+    <header>
+      <div class="nav-container">
+      <a href="index.html" class="logo"> <img src="bun_photos/logo.png" alt="Bun Bun" style="width:97px;height:18px;"></a>
+        <nav>
+          <ul>
+            <li><a href="about_v1.html"> About Us </a></li>
+            <li><a href="browse_v2.html"> Order Online </a></li>
+            <div class="cart"> <a href="cart.html">
+              <img src="bun_photos/cart_fill_btn.png" alt="Cart">
+              <div class="cart-number" id="cartnumber"></div>
+            </a> </div>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+      <!-- Banner section  -->
+    <div id="bg-image-home">
+      <div class="banner-text">
+        <div class="palatino-th-bold">Handcrafted Buns Delivered to You.</div>
+        <div class="palatino-tw-bold" id="subheading-margin">Gift them to your loved ones</div>
+        <a href="browse_v2.html"><div class="home-btn">Order Online</div></a>
+        <h5>Online Delivery OR Pickup available!</h5>
+      </div>
+    </div> <!-- bg-image-home -->
+
+    <!-- Address section -->
+    <div class="address-container">
+      <h2>Check if your address is within our delivery range.</h2>
+      <div class="search">
+        <input type="text" placeholder="Enter Address">
+        <a href="#" class="search-btn"><img src="bun_photos/search_btn.png" alt="search"></a>
+      </div>
+    </div> <!-- address-container -->
+
+    <!-- Additional info section -->
+    <div class="home-left-right-container">
+      <div id="howmade-bg">
+        <div class="other-stuff-text">
+          <h2>How our Buns are made</h2>
+          <h4>Flavors made from the finest ingredients and crowned with our signature glazing.</h4>
+          <a href="about_v1.html"><div class="home-btn">Read More</div></a>
+        </div> <!-- other-stuff-text -->
+      </div> <!-- howmade-bg -->
+
+      <div id="review-bg">
+        <div class="other-stuff-text">
+          <div id="review-heading">“ Perfect example of a hometown bakery “</div>
+          <div id="review-p">Simple, unpretentious, affordable, excellent. What more can I say. Everything is fresh with taht homemade taste and quality. Their sugar glazed buns are the best!</div>
+        </div> <!-- other-stuff-text -->
+      </div> <!-- review-bg -->
+
+    </div> <!-- home-left-right-container -->
+
+
+    <!--Footer-->
+    <div class="footer-bg">
+        <div class="text-sans"> <!--just for fonts-->
+          <div class="footer-grid">
+            <div class="footer-grid-stuff"><ul>
+              <li>Bun Bun</li>
+              <li><a href="home_v1.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="browse_v1.html">Order Online</a></li>
+          </ul></div> <!--footer-grid-stuff 1-->
+        
+            <div class="footer-grid-stuff"><ul>
+              <li>Visit</li>
+              <li><a href="https://cathedralmansions.com/">4716 Ellsworth Ave. #902 Pittsburgh, PA, USA 15213</a></li>
+          </ul></div> <!--footer-grid-stuff 2-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Contact</li>
+              <li><a href="#">bunbunpittsburgh@gmail.com </a></li>
+              <li><a href="browse_v1.html">408 540 8069</a></li>
+          </ul></div> <!--footer-grid-stuff 3-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Support Us</li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+          </ul></div> <!--footer-grid-stuff 4-->
+        </div> <!--footer-grid-->
+        </div> <!--text-sans-->
+    </div> <!--footer-bg-->
+
+    <script src="cart.js"></script>
+    <script src="detail.js" async></script>
+
+  </body>
+</html>

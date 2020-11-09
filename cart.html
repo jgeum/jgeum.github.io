@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BunBun Cart</title>
+    <link rel="stylesheet" type="text/css" href="style_v2.css">
+
+    
+  </head>
+
+  <body onload="updateCart(), displayCartNumber();">
+
+    <!-- Navigation bar  -->
+    <header>
+      <div class="nav-container">
+      <a href="index.html" class="logo"> <img src="bun_photos/logo.png" alt="Bun Bun" style="width:97px;height:18px;"></a>
+        <nav>
+          <ul>
+            <li><a href="about_v1.html"> About Us </a></li>
+            <li><a href="browse_v2.html"> Order Online </a></li>
+            <div class="cart"> <a href="cart.html">
+              <img src="bun_photos/cart_fill_btn.png" alt="Cart">
+              <div class="cart-number" id="cartnumber"></div>
+            </a> </div>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+
+    <div class="container"> <!-- contains everything -->     
+      
+      <br><br><br>
+
+      <h2>Shopping Cart</h2> 
+
+      <div class="underline"></div>
+      
+      <!--all cart items -->
+      <div id="all-cart-items">
+
+        <!-- This section shows how a single cart item will look in the cart page. I referenced this code when bringing the visual elements and classes in updateCart function. 
+
+         <div class="cart-item-grid">
+          <img src="bun_photos/detail_original.png" class="cart-tn">
+
+          <div class="cart-item-info1">
+            <div class="palatino-tw-bold"> Original, Sugar-milk</div>
+            <h4 style="margin-right:10px;" class="cart-item-quant">Quantity: 1</h4>
+            <button type="button" class="remove-btn remove-action">Remove</button>
+          </div>
+
+          <div class="cart-item-info2">
+            <div class="palatino-tw-bold cart-item-price"> $ 2</div>
+          </div>
+        </div> -->
+
+      </div>  
+
+      <br><br><br>
+      <!-- total price section -->
+      <div id="total-price">
+            <div class="align-left palatino-tw-bold">Total</div> 
+            <div class="align-right palatino-tw-bold" class="cart-total" id="tprice"></div> 
+      </div>
+      <!-- total price section close -->
+          
+      <button class="purple-btn align-right">Checkout</button>
+
+      <br><br><br>
+
+    </div> <!-- container close -->
+
+
+
+    <!--Footer-->
+    <div class="footer-bg">
+        <div class="text-sans"> <!--just for fonts-->
+          <div class="footer-grid">
+            <div class="footer-grid-stuff"><ul>
+              <li>Bun Bun</li>
+              <li><a href="home_v1.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="browse_v1.html">Order Online</a></li>
+          </ul></div> <!--footer-grid-stuff 1-->
+        
+            <div class="footer-grid-stuff"><ul>
+              <li>Visit</li>
+              <li><a href="https://cathedralmansions.com/">4716 Ellsworth Ave. #902 Pittsburgh, PA, USA 15213</a></li>
+          </ul></div> <!--footer-grid-stuff 2-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Contact</li>
+              <li><a href="#">bunbunpittsburgh@gmail.com </a></li>
+              <li><a href="browse_v1.html">408 540 8069</a></li>
+          </ul></div> <!--footer-grid-stuff 3-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Support Us</li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+          </ul></div> <!--footer-grid-stuff 4-->
+        </div> <!--footer-grid-->
+        </div> <!--text-sans-->
+    </div> <!--footer-bg-->
+
+    <script src="cart.js"></script>
+    <script src="detail.js" async></script>
+
+  </body>
+</html>

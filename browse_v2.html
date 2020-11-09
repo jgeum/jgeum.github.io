@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BunBun Browse</title>
+    <link rel="stylesheet" type="text/css" href="style_v2.css">
+    
+
+  </head>
+
+  <body onload="displayCartNumber();">
+
+    <!-- Navigation bar  -->
+    <header>
+      <div class="nav-container">
+      <a href="index.html" class="logo"> <img src="bun_photos/logo.png" alt="Bun Bun" style="width:97px;height:18px;"></a>
+        <nav>
+          <ul>
+            <li><a href="about_v1.html"> About Us </a></li>
+            <li><a href="browse_v2.html"> Order Online </a></li>
+            <div class="cart"> <a href="cart.html">
+              <img src="bun_photos/cart_fill_btn.png" alt="Cart">
+              <div class="cart-number" id="cartnumber"></div>
+            </a> </div>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+    <div class="container"> <!-- contains everything -->     
+      
+      <br><br>
+
+      <!-- Combo Carousel -->
+      <h2>Combos</h2>
+      <h4>Customizable flavors and glazing in a box!</h4>
+
+      <div id="carousel-wrapper">
+        
+          <div id="carousel">
+            <div id="carousel-content">
+              <div class="combo-card">
+                <img src="bun_photos/box_4_tn.png"/>
+                <h4>Box of 4 | $ 7</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_6_tn.png"/>
+                <h4>Box of 6 | $ 10</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 9 | $ 16</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 12 | $ 22</h4>
+              </div>
+
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 24 | $ 40</h4>
+              </div> 
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 48 | $ 75</h4>
+              </div> 
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 70 | $ 130</h4>
+              </div> 
+              <div class="combo-card">
+                <img src="bun_photos/box_9_tn.png"/>
+                <h4>Box of 100 | $ 180</h4>
+              </div> 
+            </div> <!-- carousel-content End -->
+          </div> <!-- carousel End -->
+        
+        <button id="prev">&#10094;</button>
+        <button id="next">&#10095;</button>
+
+      </div> <!-- combo-outer-wrapper End -->
+
+      <br><br><br><hr><br><br><br>
+
+      <!-- All buns section -->
+      <h2>All Buns</h2> 
+      <h4>Comes with different glazing options!</h4>
+
+      <div class="allbun-wrapper"> 
+
+        <!-- 1st card-->
+        <div class="card" data-modal="modal-original">
+          <img src="bun_photos/original_tn.png" class="thumbnail" id="tn1" alt="Original"/>
+          <h4 class="bun-name">Original | $ 2</h4>
+        </div>
+
+        <!--product detail 1 window content-->
+        <div class="modal-bg" id="modal-one" >
+          <div class="modal-content">
+          <span class="modal-close">&times;</span>
+          <h2 class="bun-name">Original</h2>
+          
+          <div class="modal-content-both">
+            <div class="modal-content-left">
+              <img src="bun_photos/original_tn.png" class="detail-image"/> <!--image changes-->
+            </div>
+
+            <div class="modal-content-right">
+              <h4>Glazing</h4>
+              <form>
+                <div class="selections">
+                  <div class="detail-select">
+                    <input type="radio" id="glaze1" name="detail" value="None" onclick="glazeOne()" required>
+                    <label for="glaze1"> None </label> 
+                  </div>
+
+                  <div class="detail-select">
+                    <input type="radio" id="glaze2" name="detail" value="Sugar-milk" onclick="glazeTwo()" required>
+                    <label for="glaze2"> Sugar-milk </label> 
+                  </div>
+
+                  <div class="detail-select">
+                    <input type="radio" id="glaze3" name="detail" value="Vanilla-milk" onclick="glazeThree()" required>
+                    <label for="glaze3"> Vanilla-milk </label> 
+                  </div>
+
+                  <div class="detail-select">
+                    <input type="radio" id="glaze4" name="detail" value="Double Chocolate" onclick="glazeFour()" required>
+                    <label for="glaze4"> Double Chocolate </label> 
+                  </div>
+
+                </div>
+              </form>
+              <br>
+              <h4>Quantity | Price</h4>
+              <form> 
+                <div class="selections">
+                  <div class="detail-select">
+                    <input type="radio" id="quant1" name="detail" value=1 onclick="quantOne()" required>
+                    <label for="quant1"> 1 bun | $2 </label>
+                  </div>
+
+                  <div class="detail-select">
+                    <input type="radio" id="quant2" name="detail" value=3 onclick="quantTwo()" required>
+                    <label for="quant2"> 3 buns | $6 </label>
+                  </div>
+
+                  <div class="detail-select">
+                    <input type="radio" id="quant3" name="detail" value=6 onclick="quantThree()" required>
+                    <label for="quant3"> 6 buns | $10 </label>
+                  </div>
+
+                  <div class="detail-select">
+                    <input type="radio" id="quant4" name="detail" value=12 onclick="quantFour()" required>
+                    <label for="quant4"> 12 buns | $20 </label>
+                  </div>
+                </div>
+              </form> 
+              <br><br>
+              <div class="underline"></div>
+              <div class="two-btns">
+                <button class="purple-btn add-to-cart-btn">Add to Cart</button>
+<!--                 <input type="submit" value="Add to Cart" id="addToCart" onclick="addToCart();"/> -->
+                <button class="purple-btn">Checkout</button>
+              </div>
+            </div> <!-- modal-content-right-->
+          </div> <!-- modal-content-both-->
+      </div> <!-- modal-content ends-->
+        </div> <!-- modal-bg -->
+        <!--product detail window content ends-->
+
+        <!-- 2nd card-->
+        <div class="card" data-modal="modal-two">
+          <img src="bun_photos/blackberry_tn.png" class="thumbnail" id="tn2" alt="Blackberry"/>
+          <h4>Blackberry | $ 2</h4>
+        </div> 
+        
+        <!-- 3rd card-->
+        <div class="card"> 
+          <img src="bun_photos/walnut_tn.png" class="thumbnail" id="tn3" alt="Walnut"/>
+          <h4>Walnut | $ 14</h4>
+        </div>
+
+        <!-- 4th card-->
+        <div class="card"> 
+          <img src="bun_photos/glutenfree_tn.png" class="thumbnail" id="tn4" alt="Original (Gluten Free)"/>
+          <h4>Original (Gluten Free) | $ 20</h4>
+        </div> 
+
+        <!-- 5th card-->
+        <div class="card">
+          <img src="bun_photos/pumpspice_tn.png" class="thumbnail" id="tn5" alt="Pumpkin Spice"/>
+          <h4>Pumpkin Spice | $ 2</h4>
+        </div>
+
+        <!-- 6th card-->
+        <div class="card">
+          <img src="bun_photos/pecan_tn.png" class="thumbnail" id="tn6" alt="Caramel Pecan"/>
+          <h4>Caramel Pecan | $ 2</h4>
+        </div> 
+
+      </div> <!-- allbun-wrapper -->
+
+    <br><br><br>
+
+    </div> <!-- container -->
+
+
+    <!--Footer-->
+    <div class="footer-bg">
+        <div class="text-sans"> <!--just for fonts-->
+          <div class="footer-grid">
+            <div class="footer-grid-stuff"><ul>
+              <li>Bun Bun</li>
+              <li><a href="home_v1.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="browse_v1.html">Order Online</a></li>
+          </ul></div> <!--footer-grid-stuff 1-->
+        
+            <div class="footer-grid-stuff"><ul>
+              <li>Visit</li>
+              <li><a href="https://cathedralmansions.com/">4716 Ellsworth Ave. #902 Pittsburgh, PA, USA 15213</a></li>
+          </ul></div> <!--footer-grid-stuff 2-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Contact</li>
+              <li><a href="#">bunbunpittsburgh@gmail.com </a></li>
+              <li><a href="browse_v1.html">408 540 8069</a></li>
+          </ul></div> <!--footer-grid-stuff 3-->
+
+          <div class="footer-grid-stuff"><ul>
+              <li>Support Us</li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+          </ul></div> <!--footer-grid-stuff 4-->
+        </div> <!--footer-grid-->
+        </div> <!--text-sans-->
+    </div> <!--footer-bg-->
+
+    <script src="cart.js"></script>
+    <script src="detail.js" async></script>
+
+  </body>
+</html>
